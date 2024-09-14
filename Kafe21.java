@@ -20,12 +20,17 @@ public class Kafe21{
 
         totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh) + (jmlRoti * hargaRoti);
         nominalBayar = totalHarga - (diskon * totalHarga);
+        
         int nominalInt = (int) nominalBayar;
-        System.out.println("Nominal Bayar: " + nominalInt);
+        byte totalByte = (byte) totalHarga;
+
         System.out.println("Keanggotaan pelanggan " + keanggotaan);
         System.out.println("Item pembelian " + jmlKopi + " kopi, " + jmlTeh + " teh, " + jmlRoti + " roti");
         System.out.println("Nominal bayar Rp" + nominalBayar);
-        
+        System.out.println("Nominal bayar (int): Rp" + nominalInt);
+        System.out.println("Total harga (byte): Rp" + totalByte);
         
     }
 }
+
+// int nominalInt = (int) nominalBayar;
